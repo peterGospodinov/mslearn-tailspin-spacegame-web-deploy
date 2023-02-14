@@ -1,14 +1,8 @@
 trigger:
 - '*'
 
-pool:
-  name: Default
-#  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
-
-  variables:
-    buildConfiguration: 'Release'
+variables:
+  git add azure-pipelines.yml  buildConfiguration: 'Release'
   
   stages:
   - stage: 'Build'
